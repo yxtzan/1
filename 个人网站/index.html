@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>成 · 个人网站</title>
+  <meta name="description" content="成的个人网站。做东西，写下来，慢慢变好。">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23b8432f'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-size='16' font-family='serif' fill='%23f7f3ea'%3E%E6%88%90%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,560;9..144,700&family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip" href="#main">跳到正文</a>
+
+  <header class="nav" id="nav">
+    <a class="nav-brand" href="#top">成</a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks">
+      <span class="nav-toggle-bars" aria-hidden="true"></span>
+      <span class="sr">菜单</span>
+    </button>
+    <nav class="nav-links" id="navLinks">
+      <a href="#about">关于</a>
+      <a href="#now">近况</a>
+      <a href="#work">作品</a>
+      <a href="#notes">札记</a>
+      <a href="#contact">联系</a>
+    </nav>
+    <button class="theme" id="themeToggle" type="button" aria-pressed="false">
+      <span class="theme-icon" aria-hidden="true"></span>
+      <span class="theme-label">夜间</span>
+    </button>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero-meta">
+        <time id="today">2026.10.06</time>
+        <span class="dot" aria-hidden="true"></span>
+        <span id="clock">00:00</span>
+      </div>
+      <div class="hero-layout">
+        <div>
+          <p class="kicker">个人网站</p>
+          <h1>成</h1>
+          <p class="lede">做东西，写下来，<br>慢慢变好。</p>
+          <p class="hero-note">这是一页给自己留的门口。路过的人也可以进来坐一下。</p>
+          <div class="hero-actions">
+            <a class="btn" href="#work">看看做过的</a>
+            <a class="btn btn-quiet" href="#contact">写一封信</a>
+          </div>
+        </div>
+        <div class="seal" aria-hidden="true">
+          <span>成</span>
+        </div>
+      </div>
+      <ol class="hero-index">
+        <li><a href="#about"><em>01</em>关于</a></li>
+        <li><a href="#now"><em>02</em>近况</a></li>
+        <li><a href="#work"><em>03</em>作品</a></li>
+        <li><a href="#notes"><em>04</em>札记</a></li>
+      </ol>
+    </section>
+
+    <section class="section" id="about">
+      <div class="section-label"><span>01</span>关于</div>
+      <div class="about-grid">
+        <h2>我是成。</h2>
+        <div class="prose">
+          <p>没有一份要推销的履历。这页只是让人知道我在，以及最近在想什么。</p>
+          <p>我喜欢把事情做完再说话。一个页面、一段笔记、一个小工具，都算数。复杂的部分自己消化，留下来的应当能被别人直接用。</p>
+          <p>如果你是来找合作的，看完作品再写信。如果你只是路过，也欢迎。</p>
+        </div>
+      </div>
+      <ul class="facts">
+        <li><span>在做</span><strong>把想法收成能打开的东西</strong></li>
+        <li><span>在意</span><strong>页面舒服，话说得短</strong></li>
+        <li><span>状态</span><strong>在线，回信不一定快</strong></li>
+      </ul>
+    </section>
+
+    <section class="section" id="now">
+      <div class="section-label"><span>02</span>近况</div>
+      <div class="now-head">
+        <h2>这个月</h2>
+        <p>更新于 2026 年 10 月</p>
+      </div>
+      <ol class="now-list">
+        <li>
+          <span class="now-no">01</span>
+          <div>
+            <h3>把个人网站重做了一遍</h3>
+            <p>只要一页。打开就能看，改起来也不绕。</p>
+          </div>
+        </li>
+        <li>
+          <span class="now-no">02</span>
+          <div>
+            <h3>在练把话说短</h3>
+            <p>先写给自己看的句子，再决定要不要给别人看。</p>
+          </div>
+        </li>
+        <li>
+          <span class="now-no">03</span>
+          <div>
+            <h3>有一个还没起名的小本子</h3>
+            <p>用来记下今天真正做完的事。还在纸上，还没变成程序。</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <section class="section" id="work">
+      <div class="section-label"><span>03</span>作品</div>
+      <div class="work-head">
+        <h2>做过的几件</h2>
+        <p>点开一行，看它是什么。</p>
+      </div>
+      <div class="work-list" id="workList">
+        <article class="work">
+          <button class="work-toggle" aria-expanded="false">
+            <span class="work-no">01</span>
+            <span class="work-title">这页网站</span>
+            <span class="work-year">2026</span>
+            <span class="work-more" aria-hidden="true"></span>
+          </button>
+          <div class="work-panel">
+            <p>用 HTML、CSS 和 JavaScript 写成的单页。没有框架，没有构建步骤。本地打开 <code>index.html</code> 就能看。</p>
+            <ul>
+              <li>夜间模式会记住你的选择</li>
+              <li>窄屏上菜单会收起来</li>
+              <li>作品这一栏可以展开</li>
+            </ul>
+          </div>
+        </article>
+        <article class="work">
+          <button class="work-toggle" aria-expanded="false">
+            <span class="work-no">02</span>
+            <span class="work-title">笔记夹</span>
+            <span class="work-year">进行中</span>
+            <span class="work-more" aria-hidden="true"></span>
+          </button>
+          <div class="work-panel">
+            <p>一些还没公开的短文。题目很具体：怎么把一件事做完、怎么把一段话改短、怎么判断一个页面是不是多余。</p>
+            <ul>
+              <li>先写给自己</li>
+              <li>写完再决定要不要放出来</li>
+            </ul>
+          </div>
+        </article>
+        <article class="work">
+          <button class="work-toggle" aria-expanded="false">
+            <span class="work-no">03</span>
+            <span class="work-title">未命名的小本子</span>
+            <span class="work-year">草稿</span>
+            <span class="work-more" aria-hidden="true"></span>
+          </button>
+          <div class="work-panel">
+            <p>每天只记三件真正做完的事。不是待办清单，是收工记录。还停在纸上，等它自己长出该有的样子。</p>
+            <ul>
+              <li>一天三行</li>
+              <li>写完就合上</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="notes">
+      <div class="section-label"><span>04</span>札记</div>
+      <h2 class="notes-title">留在这页上的三句</h2>
+      <div class="notes">
+        <article>
+          <p>少做功能，多做能用完的东西。</p>
+          <span>关于动手</span>
+        </article>
+        <article>
+          <p>页面先让人舒服，再谈聪明。</p>
+          <span>关于做页面</span>
+        </article>
+        <article>
+          <p>写给以后的自己，也欢迎现在的你。</p>
+          <span>关于这页</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="section-label"><span>05</span>联系</div>
+      <h2>想说话的话，写一封信。</h2>
+      <p class="contact-lead">我会看。不一定很快，但会看。</p>
+      <button class="mail" id="mail" type="button" data-mail="hello@cheng.page">
+        <span>hello@cheng.page</span>
+        <small id="mailHint">点击复制</small>
+      </button>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year">2026</span> 成</p>
+    <a href="#top">回到顶部</a>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
